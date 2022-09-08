@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,24,31,1) 11%, rgba(120,121,9,0.5494572829131652) 35%, rgba(233,235,15,0.5494572829131652) 62%);
 }
 
 .coin {
