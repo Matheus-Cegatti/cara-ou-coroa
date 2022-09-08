@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+}
+
+.coin {
+    width: 500px;
+    max-width: 500px;
+}
