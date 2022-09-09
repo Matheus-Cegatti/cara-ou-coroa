@@ -24,7 +24,7 @@ body {
     -webkit-perspective: 300px;
     perspective: 300px;
     position: absolute;
-    border: 1.5px solid goldenrod;
+    border: 1.5px solid #BF9742;
 }
 
 .status {
@@ -41,7 +41,7 @@ body {
     margin: 50px auto;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    animation: moeda-girando 2s forwards;
+    animation: moeda-coroa 2s forwards;
 }
 
 .imagens-moeda img {
@@ -71,3 +71,46 @@ body {
     }
 }
 
+@keyframes moeda-coroa {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(2170deg);
+    }
+}
+
+.botao {
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn-jogar,
+#btn-resetar {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    /* background-color: #FFEE63; */
+    background: linear-gradient(27deg, rgba(240,165,0,1) 0%, rgba(255,224,93,1) 52%, rgba(255,202,3,1) 86%, rgba(0,9,44,1) 100%);
+    border-radius: 7px;
+    border: 1.7px solid #F0A500;
+    cursor: pointer;
+    color: #1A1C20;
+    font-weight: 600;
+}
+
+#btn-jogar:hover
+ {
+    background: linear-gradient(170deg, rgba(240,165,0,1) 0%,  52%, rgba(255,202,3,1) 86%, rgba(0,9,44,1) 100%);
+    box-shadow:
+                1px 1px #30475E,
+                2px 2px #30475E,
+                3px 3px #30475E;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+/* button:first-child {
+    margin-right: 3rem;
+    background-color: #FFEA11;
+} */
