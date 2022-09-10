@@ -41,7 +41,6 @@ body {
     margin: 50px auto;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    animation: moeda-girando 2s forwards;
 }
 
 .imagens-moeda img {
