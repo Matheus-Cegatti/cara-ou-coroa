@@ -36,3 +36,11 @@ function desabilitarBtnJogar() {
         btnJogar.disabled = false
     }, 2000);
 }
+
+btnResetar.addEventListener("click", () => {
+    console.log("resetou");
+    moeda.style.animation = "none";
+    cara = 0;
+    coroa = 0
+    atualizaPlacar()
+})
