@@ -14,9 +14,25 @@ btnJogar.addEventListener("click", ()=> {
             moeda.style.animation = "moeda-girando 2s forwards"
         }, 100)
         console.log("cara");
+        cara++
     }else {
         setTimeout(function() {
             moeda.style.animation = "moeda-coroa 2s forwards"
-        })
+        },100)
+        coroa++
     }
+    setTimeout(atualizaPlacar, 2000);
+    desabilitarBtnJogar();
 })
+
+function atualizaPlacar() {
+    document.querySelector("#cara").textContent = `Cara:${cara}`;
+    document.querySelector("#coroa").textContent = `Coroa:${coroa}`
+}
+
+function desabilitarBtnJogar() {
+    btnJogar.disabled = true;
+    setTimeout(() => {
+        btnJogar.disabled = false
+    }, 2000);
+}
