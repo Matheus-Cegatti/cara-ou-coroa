@@ -6,20 +6,18 @@ let coroa = 0;
 
 btnJogar.addEventListener("click", ()=> {
     contador = Math.floor(Math.random() * 2);
-    console.log(contador);
     moeda.style.animation = "none";
 
     if(contador) {
         setTimeout(function(){
             moeda.style.animation = "moeda-girando 2s forwards"
-        }, 100)
-        console.log("cara");
-        cara++
+        }, 100);
+        cara++;
     }else {
         setTimeout(function() {
             moeda.style.animation = "moeda-coroa 2s forwards"
-        },100)
-        coroa++
+        },100);
+        coroa++;
     }
     setTimeout(atualizaPlacar, 2000);
     desabilitarBtnJogar();
@@ -27,7 +25,7 @@ btnJogar.addEventListener("click", ()=> {
 
 function atualizaPlacar() {
     document.querySelector("#cara").textContent = `Cara:${cara}`;
-    document.querySelector("#coroa").textContent = `Coroa:${coroa}`
+    document.querySelector("#coroa").textContent = `Coroa:${coroa}`;
 }
 
 function desabilitarBtnJogar() {
@@ -41,6 +39,6 @@ btnResetar.addEventListener("click", () => {
     console.log("resetou");
     moeda.style.animation = "none";
     cara = 0;
-    coroa = 0
-    atualizaPlacar()
+    coroa = 0;
+    atualizaPlacar();
 })
